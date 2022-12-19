@@ -1,7 +1,7 @@
 # LALR Parser
 Built a LALR Parser in C
 
-# How to run:
+# How to run
 Note: Make sure you have Flex and Bison installed on your system!
 
 1. Open `Command Prompt`.
