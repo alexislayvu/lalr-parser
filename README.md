@@ -1,15 +1,30 @@
 # LALR Parser
-Built a LALR Parser in C
+Built a LALR Parser in C for parsing and analyzing input source code. The parser, implemented to adhere to the Look-Ahead LR parsing algorithm, processes the input according to specified grammar rules and generates a parse tree.
 
-# How to run
-Note: Make sure you have Flex and Bison installed on your system!
+# Usage
+Please ensure you have Flex and Bison installed on your system.
 
-1. Open `Command Prompt`.
-2. Navigate to the directory where the files have been downloaded using `cd`.
-3. In the `Command Prompt` type `bison -d calc.y`.
-4. Then, type `flex calc.lex`.
-5. Next, type `gcc lex.yy.c calc.tab.c -w`.
-6. Finally, type `a.exe` and enter an arithmetic expression.
+1. Clone the repository
 
-# Test Runs
+   - `git clone https://github.com/alexislayvu/LALR-Parser.git`
+
+2. Go into the directory
+
+   - `cd LALR-Parser`
+
+3. Generate parser code
+
+   - `bison -d calc.y`
+
+4. Generate lexer code
+
+   - `flex calc.lex`
+  
+5. Compile the lexer and parser
+   - `gcc lex.yy.c calc.tab.c -w`
+  
+6. Execute the parser and enter an arithmetic expression
+   - `a.exe`
+
+# Example
 ![test_runs](https://user-images.githubusercontent.com/54639928/208363902-b64f7c4d-068a-4fa2-b5f1-3469b75fd679.png)
